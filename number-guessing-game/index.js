@@ -6,12 +6,11 @@ console.log(
 I'm thinking of a number between 1 and 100.
 `);
 
-let computer_guess = Math.floor(Math.random() * 101)
-console.log(computer_guess)
 let attempts = 0
 let chances
-let time=new Date()
+let time = new Date()
 const guessNumber = async () => {
+    let computer_guess = Math.floor(Math.random() * 101)
 
     const game_level = await inquirer
         .prompt([
@@ -19,9 +18,7 @@ const guessNumber = async () => {
                 type: "list",
                 name: "level",
                 message: "Please select a difficulty level: ",
-                choices: ["1. Easy (10 chances)", "2. Medium (5 chances", "3. Hard (3 chances"]
-
-
+                choices: ["1. Easy (10 chances)", "2. Medium (5 chances)", "3. Hard (3 chances)"]
             }
 
         ])
@@ -39,7 +36,7 @@ const guessNumber = async () => {
 
     let hasGuessedRight = false
 
-    while (!hasGuessedRight && chances >= attempts) {
+    while (!hasGuessedRight && chances > attempts) {
         attempts++
 
 
@@ -67,7 +64,8 @@ const guessNumber = async () => {
             console.log(`📈 The number is less than ${guess}`);
 
         } else {
-            console.log(`🎉Congratulations! You guessed the correct number after ${attempts} attempts after ${new Date()-time}ms`);
+            const currentTimeInSeconds = (new Date() - time) / 1000
+            console.log(`\n🎉Congratulations! You guessed the correct number after ${attempts} attempts after ${currentTimeInSeconds}s\n`);
             hasGuessedRight = true
         }
 
@@ -75,20 +73,22 @@ const guessNumber = async () => {
 
     }
     if (attempts >= chances && !hasGuessedRight) {
-        console.log(`Sorry you have exhausted your chances`)
+        console.log(`\nSorry you have exhausted your chances`)
+        console.log(`The number is ${computer_guess}🥱`);
+
     }
 
-     // Ask if player wants to play again
-    const playAgain=await inquirer.prompt([{
-        type:'confirm',
-        message:"Do you want to play again?: ",
-        name:"restart",
-        default:false
+    // Ask if player wants to play again
+    const playAgain = await inquirer.prompt([{
+        type: 'confirm',
+        message: "Do you want to play again?: ",
+        name: "restart",
+        default: false
     }])
 
-    if(playAgain.restart){
-        attempts=0
-        computer_guess=
+    if (playAgain.restart) {
+        attempts = 0
+        computer_guess = Math.floor(Math.random() * 101)
         await guessNumber()
     } else {
         console.log('Thanks for playing! Goodbye! 👋');

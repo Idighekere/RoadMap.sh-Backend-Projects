@@ -14,7 +14,7 @@ It is a CLI-based game, so you need to use the command line to interact with the
 #### Here is a sample output of the game:
 
 ```bash
-ngg
+ngg-cli
 ```
 
 ```
