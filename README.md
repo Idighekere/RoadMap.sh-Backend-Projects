@@ -27,6 +27,7 @@ This repository contains my implementations of backend projects from [roadmap.sh
    - Status: Completed
    - Description: A command-line interface game where users guess a random number
    - Technologies: Node.js, Inquirer.js
+   - Link: [number-guessing-game](https://roadmap.sh/projects/number-guessing-game)
 
 (More projects will be added as they are implemented)
 
@@ -80,9 +81,9 @@ While this is a personal learning repository, suggestions and feedback are welco
 Started: January 2025
 Latest Update: January 17, 2025
 ## 📖 Resources
-- [Roadmap.sh Backend Development]('https://roadmap.sh/backend')
-- [Node.js Documentation]('https://nodejs.org/docs')
-- [Express.js Documentation]('https://expressjs.com/')
+- [Roadmap.sh Backend Development](https://roadmap.sh/backend)
+- [Node.js Documentation](https://nodejs.org/docs)
+- [Express.js Documentation](https://expressjs.com/)
 
 ## 📜 License
 This project is licensed under the MIT License - see the LICENSE file for details.
