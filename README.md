@@ -27,7 +27,22 @@ This repository contains my implementations of backend projects from [roadmap.sh
    - Status: Completed
    - Description: A command-line interface game where users guess a random number
    - Technologies: Node.js, Inquirer.js
-   - Link: [number-guessing-game](https://roadmap.sh/projects/number-guessing-game)
+   - Link: [RoadMap.sh](https://roadmap.sh/projects/number-guessing-game)
+   - Code: [number-guessing-game](https://github.com/Idighekere/RoadMap.sh-Backend-Projects/tree/master/number-guessing-game)
+
+2. **Github User Activiy**
+   - Status: Completed
+   - Description: A command-line interface app that fetches github user's activities and display them
+   - Technologies: Js,
+   - Link:[RoadMap.sh](https://roadmap.sh/projects/github-user-activity)
+   - Code: [github-user-activity](https://github.com/Idighekere/RoadMap.sh-Backend-Projects/tree/master/github-user-activity)
+   
+3. **Task Tracker**
+   - Status: Completed
+   - Description: A CLI based todo-app, that adds, delete, update, mark done, mark in progress and Lists
+   - Technologies: Js
+   - Link: [RoadMap.sh](https://roadmap.sh/projects/task-tracker)
+   - Code: [task-tracker](https://github.com/Idighekere/RoadMap.sh-Backend-Projects/tree/master/task-tracker)
 
 (More projects will be added as they are implemented)
 
@@ -55,7 +70,7 @@ cd roadmap.sh-backend-projects
 3. Install dependencies (for specific project):
 ```bash
 cd project-name
-npm install
+npm install && npm i -g
 ```
 Follow the project-specific README for further instructions
 

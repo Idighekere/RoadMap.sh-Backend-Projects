@@ -96,4 +96,5 @@ const guessNumber = async () => {
     }
 }
 
+
 guessNumber().catch((error) => console.error(error))
