@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "description": "Data subscription",
+    "amount": 750,
+    "createdAt": "2025-01-22T03:54:57.020Z",
+    "updatedAt": "2025-01-22T03:55:19.695Z"
+  },
+  {
+    "id": 2,
+    "description": "Transportation",
+    "amount": 650,
+    "createdAt": "2025-02-22T03:55:13.295Z",
+    "updatedAt": "2025-01-22T03:55:13.295Z"
+  },
+  {
+    "id": 3,
+    "description": "Electricity Bills",
+    "amount": 400,
+    "createdAt": "2025-01-22T14:13:42.469Z",
+    "updatedAt": "2025-01-22T14:13:42.469Z"
+  }
+]

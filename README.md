@@ -36,14 +36,19 @@ This repository contains my implementations of backend projects from [roadmap.sh
    - Technologies: Js,
    - Link:[RoadMap.sh](https://roadmap.sh/projects/github-user-activity)
    - Code: [github-user-activity](https://github.com/Idighekere/RoadMap.sh-Backend-Projects/tree/master/github-user-activity)
-   
+
 3. **Task Tracker**
    - Status: Completed
    - Description: A CLI based todo-app, that adds, delete, update, mark done, mark in progress and Lists
    - Technologies: Js
    - Link: [RoadMap.sh](https://roadmap.sh/projects/task-tracker)
    - Code: [task-tracker](https://github.com/Idighekere/RoadMap.sh-Backend-Projects/tree/master/task-tracker)
-
+4. **Expense Tracker**
+   - Status: Completed
+   - Description: A CLI based expense tracker, that adds, delete, update, lists, show summary(total) and summary by months
+   - Technologies: Js
+   - Link: [RoadMap.sh](https://roadmap.sh/projects/expense-tracker)
+   - Code: [expense-tracker](https://github.com/Idighekere/RoadMap.sh-Backend-Projects/tree/master/expense-tracker)
 (More projects will be added as they are implemented)
 
 ## 🎓 Learning Objectives
@@ -94,7 +99,7 @@ While this is a personal learning repository, suggestions and feedback are welco
 
 ## 📅 Progress Tracking
 Started: January 2025
-Latest Update: January 17, 2025
+Latest Update: January 22, 2025
 ## 📖 Resources
 - [Roadmap.sh Backend Development](https://roadmap.sh/backend)
 - [Node.js Documentation](https://nodejs.org/docs)
