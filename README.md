@@ -39,8 +39,6 @@ This repository contains my implementations of backend projects from [roadmap.sh
 
 3. **Task Tracker**
    - Status: Completed
-   - Description: A CLI based todo-app, that adds, delete, update, mark done, mark in progress and Lists
-   - Technologies: Js
    - Link: [RoadMap.sh](https://roadmap.sh/projects/task-tracker)
    - Code: [task-tracker](https://github.com/Idighekere/RoadMap.sh-Backend-Projects/tree/master/task-tracker)
 4. **Expense Tracker**
@@ -49,6 +47,19 @@ This repository contains my implementations of backend projects from [roadmap.sh
    - Technologies: Js
    - Link: [RoadMap.sh](https://roadmap.sh/projects/expense-tracker)
    - Code: [expense-tracker](https://github.com/Idighekere/RoadMap.sh-Backend-Projects/tree/master/expense-tracker)
+5. **Blogging Platform API**
+   - Status: Completed
+   - Description: A basic web API that allows post to be created, deleted, updated and fetched
+   - Technologies: Expressjs and MongoDB
+   - Link: [RoadMap.sh](https://roadmap.sh/projects/blogging-platform-api)
+   - Code: [blogging-platform-api](https://github.com/Idighekere/RoadMap.sh-Backend-Projects/tree/master/blogging-platform-api)
+6. **Unit Converter Web App**
+   - Status: Completed
+   - Description: A basic unit converter that converts from one length, temperature or weight unit to the other, made use of EJS for the templating and frontend
+   - Technologies: Expressjs and EJS
+   - Link: [RoadMap.sh](https://roadmap.sh/projects/unit-converter)
+   - Code: [unit-converter](https://github.com/Idighekere/RoadMap.sh-Backend-Projects/tree/master/unit-converter)
+
 (More projects will be added as they are implemented)
 
 ## 🎓 Learning Objectives
