@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <%- include('partials/header') %>
+
+        <main>
+
+            <form method="post">
+
+                <input name="value" type="number" placeholder="Enter a value" />
+                <!-- millimeter, centimeter, meter, kilometer, inch, foot, yard, mile -->
+                <select name="from" id="from">
+                    <option value="mg">Milligram </option>
+                    <option value="g">gram </option>
+                    <option value="kg">kilogram</option>
+                    <option value="oz">Ounce</option>
+                    <option value="lb">Pounds</option>
+                </select>
+
+                <select name="to" id="to">
+                    <option value="mg">Milligram </option>
+                    <option value="g">gram </option>
+                    <option value="kg">kilogram</option>
+                    <option value="oz">Ounce</option>
+                    <option value="lb">Pounds</option>
+                </select>
+
+                <button type="submit">Convert</button>
+            </form>
+
+            <div>
+                <% if (result!=null) { %>
+                    <h3>Converted Value: <%= result %>
+                            <%= to %>
+                    </h3>
+                    <% } %>
+            </div>
+
+        </main>
+</body>
+
+</html>

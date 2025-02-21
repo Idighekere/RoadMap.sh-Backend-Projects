@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <%- include('partials/header') %>
+
+        <main>
+
+            <form method="post">
+
+                <input name="value" type="number" placeholder="Enter a value" />
+                <!-- millimeter, centimeter, meter, kilometer, inch, foot, yard, mile -->
+                <select name="from" id="from">
+                    <option value="mm">Millimeter </option>
+                    <option value="km">kilometer</option>
+                    <option value="in">Inch</option>
+                    <option value="m">Meter </option>
+                    <option value="ft">Foot</option>
+                    <option value="cm">Centimeter </option>
+                    <option value="yd">Yard</option>
+                    <option value="mile">Mile</option>
+                </select>
+
+                <select name="to" id="to">
+                    <option value="cm">Centimeter </option>
+                    <option value="km">kilometer</option>
+                    <option value="in">Inch</option>
+                    <option value="mm">Millimeter </option>
+                    <option value="ft">Foot</option>
+                    <option value="m">Meter </option>
+                    <option value="yd">Yard</option>
+                    <option value="mile">Mile</option>
+                </select>
+
+                <button type="submit">Convert</button>
+            </form>
+
+            <div>
+                <% if (result) { %>
+                    <h3>Converted Value: <%= result %>
+                            <%= to %>
+                    </h3>
+                    <% } %>
+            </div>
+
+        </main>
+
+</body>
+
+</html>

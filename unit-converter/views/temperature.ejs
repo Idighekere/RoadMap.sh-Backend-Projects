@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <%- include('partials/header') %>
+        <main>
+
+            <form action="" method="post">
+
+                <input type="number" name="value" placeholder="Enter a value" />
+                <select name="from" id="">
+                    <option value="C">Celcius</option>
+                    <option value="K">Kelvin</option>
+                    <option value="F">Fahrenheit</option>
+                </select>
+
+                <select name="to" id="">
+                    <option value="K">Kelvin</option>
+                    <option value="C">Celcius</option>
+                    <option value="F">Fahrenheit</option>
+                </select>
+                <button type="submit">Convert</button>
+            </form>
+
+            <div>
+                <% if (result) { %>
+                    <h3>Converted value=<%= result %>
+                            <%= to %>
+                    </h3>
+                    <% } %>
+            </div>
+        </main>
+</body>
+
+</html>
