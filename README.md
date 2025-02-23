@@ -59,6 +59,12 @@ This repository contains my implementations of backend projects from [roadmap.sh
    - Technologies: Expressjs and EJS
    - Link: [RoadMap.sh](https://roadmap.sh/projects/unit-converter)
    - Code: [unit-converter](https://github.com/Idighekere/RoadMap.sh-Backend-Projects/tree/master/unit-converter)
+7. **TMDB CLI tool**
+   - Status: Completed
+   - Description: A command-lineinterface tool that fetches data from the TMDB APi and displays on the terminal based on user's commands ('top','upcoming', 'popular' or 'playing')
+   - Technologies: Js
+   - Link: [RoadMap.sh](https://roadmap.sh/projects/tmdb-cli)
+   - Code: [TMDB-cli-tool](https://github.com/Idighekere/RoadMap.sh-Backend-Projects/tree/master/tmdb-cli-tool)
 
 (More projects will be added as they are implemented)
 
