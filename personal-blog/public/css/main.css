@@ -70,6 +70,7 @@
 }
 
 form {
+    margin-top:1rem;
     width: 500px;
     display: flex;
     flex-direction: column;
@@ -175,6 +176,9 @@ pre {
 
 @media only screen and (max-width: 600px) {
 
+    form {
+        width: 100%;
+    }
     #site-header {
         nav {
             display: none
