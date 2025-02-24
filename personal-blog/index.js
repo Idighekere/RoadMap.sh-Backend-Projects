@@ -14,9 +14,18 @@ app.set("views", path.join(__dirname, "src", "views"));
 app.set('view engine', 'ejs')
 
 app.use(express.static('public'));
+app.use((req, res, next) => {
+    // Checking if the current route starts with /admin
+    res.locals.isAdminRoute = req.path.startsWith('/admin');
+    next();
+});
 
 app.get('/', async (req, res) => {
+ res.redirect("/articles")
 
+})
+
+app.get('/articles', async(req,res)=>{
     const articles = await action.getAllArticles()
     // console.log(articles)
     res.render('articles/lists', { articles })

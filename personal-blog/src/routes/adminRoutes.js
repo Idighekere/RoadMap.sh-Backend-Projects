@@ -2,6 +2,10 @@ const express = require('express')
 const action = require('../utils/articles')
 const router = express.Router()
 
+router.get('/',(req,res)=>{
+
+    res.redirect('/admin/dashboard')
+})
 
 router.get('/dashboard', async (req, res) => {
 
