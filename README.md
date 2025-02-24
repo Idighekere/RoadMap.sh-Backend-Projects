@@ -1,6 +1,6 @@
 # Roadmap.sh Backend Projects
 
-![Last Updated](https://img.shields.io/badge/Last%20Updated-January%202025-brightgreen)
+![Last Updated](https://img.shields.io/badge/Last%20Updated-Febraury%202025-brightgreen)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat&logo=express&logoColor=white)
 
@@ -65,6 +65,12 @@ This repository contains my implementations of backend projects from [roadmap.sh
    - Technologies: Js
    - Link: [RoadMap.sh](https://roadmap.sh/projects/tmdb-cli)
    - Code: [TMDB-cli-tool](https://github.com/Idighekere/RoadMap.sh-Backend-Projects/tree/master/tmdb-cli-tool)
+8. **Personal Blog**
+   - Status: Completed
+   - Description: A simple personal blog app that uses templating engine ejs to display blogposts. Stores each blog post as a markdown file, utilizes a basic authentication for the admin routes.
+   - Technologies: EJS, Express, Markdown
+   - Link: [RoadMap.sh](https://roadmap.sh/projects/persoonal-blog)
+   - Code: [personal-blog](https://github.com/Idighekere/RoadMap.sh-Backend-Projects/tree/master/personal-blog)
 
 (More projects will be added as they are implemented)
 
@@ -116,7 +122,7 @@ While this is a personal learning repository, suggestions and feedback are welco
 
 ## 📅 Progress Tracking
 Started: January 2025
-Latest Update: January 22, 2025
+Latest Update: Febraury 24, 2025
 ## 📖 Resources
 - [Roadmap.sh Backend Development](https://roadmap.sh/backend)
 - [Node.js Documentation](https://nodejs.org/docs)
