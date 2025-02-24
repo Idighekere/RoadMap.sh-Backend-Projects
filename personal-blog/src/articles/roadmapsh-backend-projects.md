@@ -1,12 +1,14 @@
 ---
-title: Roadmap.sh Backend Projects updated
+title: 'Roadmap.sh Backend Projects '
 date: '2025-02-24T13:50:40.180Z'
 author: Idighs
-lastModified: '2025-02-24T16:16:05.233Z'
-slug: >-
-  this-page-will-display-the-content-of-the-article-along-with-the-date-of-publication.
+lastModified: '2025-02-24T19:52:55.030Z'
+slug: roadmapsh-backend-projects
+excerpt: >-
+  This repository contains my implementations of backend projects from
+  roadmap.sh.
 ---
-  
+ 
 ![Last Updated](https://img.shields.io/badge/Last%20Updated-February%202025-brightgreen)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat&logo=express&logoColor=white)

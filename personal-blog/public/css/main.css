@@ -107,14 +107,14 @@ form {
 .articles-container {
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2em;
-    padding: 3em;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 3rem;
 
     .article {
         text-align: center;
         border: 1px solid #ddd;
-        padding: 10px;
+        padding: 1rem;
         border-radius: 6px;
         display: flex;
         flex-direction: column;
@@ -172,6 +172,17 @@ pre {
     border: 1px solide #ddd;
     background-color: #ddd;
     font-family: monospace;
+}
+
+@media only screen and (max-width:800px){
+
+    .articles-container {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:1rem
+
+    }
 }
 
 @media only screen and (max-width: 600px) {

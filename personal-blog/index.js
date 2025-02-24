@@ -40,7 +40,7 @@ app.get('/articles/:slug', async (req, res) => {
         const article = await action.getSingleArticle(slug)
 
         if (!article) {
-            res.status(404).render('error', { error: "Article not found" })
+            res.status(404).render('error', { message: "Article not found" })
         }
         res.render('articles/single', { article });
 

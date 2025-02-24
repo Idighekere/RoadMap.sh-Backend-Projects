@@ -88,7 +88,7 @@ This repository contains my implementations of backend projects from [roadmap.sh
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Idighekere/roadmap.sh-backend-projects.git
+git clone 
 ```
 
 2. Navigate to project directory:

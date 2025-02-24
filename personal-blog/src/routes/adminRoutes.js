@@ -26,10 +26,10 @@ router.get('/articles/new', (req, res) => {
 router.post('/articles', async (req, res) => {
 
     try {
-        const { title, content } = req.body
+        const { title, content,excerpt } = req.body
 
-        const { slug } = await action.createArticle({ title, content })
-        console.log(slug)
+        const { slug } = await action.createArticle({ title, content,excerpt })
+        // console.log(slug)
 
         res.redirect(`/articles/${slug}`)
     } catch (error) {
@@ -75,14 +75,15 @@ router.post('/articles/:slug/delete', async (req, res) => {
 router.post('/articles/:slug', async (req, res) => {
     try {
 
-        const { title, content } = req.body
+        const { title, content,excerpt } = req.body
         const { slug } = req.params
 
-        await action.updateArticle(slug, { title, content })
+        await action.updateArticle(slug, { title, content,excerpt })
 
         res.redirect(`/articles/${slug}`)
     } catch (error) {
-
+console.error(error)
+res.render('error',{message:error})
     }
 })
 

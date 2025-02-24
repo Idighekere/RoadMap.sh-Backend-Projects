@@ -12,12 +12,13 @@ class ArticleActions {
     async createArticle(data) {
 
         try {
-            const { title, content } = data
+            const { title, content,excerpt } = data
             const date = new Date().toISOString()
             const slug = title.split(' ').join('-').toLowerCase()
 
             const frontMatter = {
                 title,
+                excerpt,
                 date,
                 author: "Idighs",
                 lastModified: date,
@@ -75,7 +76,7 @@ class ArticleActions {
     }
 
     async updateArticle(slug, data) {
-        const { title, content } = data
+        const { title, content,excerpt } = data
 
         const articleExists = await this.getSingleArticle(slug)
 
@@ -86,6 +87,7 @@ class ArticleActions {
                 ...articleExists.data,
                 lastModified: new Date().toISOString(),
                 title,
+                excerpt
 
             }
 
