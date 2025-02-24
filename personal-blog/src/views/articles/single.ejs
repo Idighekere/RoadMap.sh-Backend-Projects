@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= article.data.title %>
+    </title>
+    <link rel="stylesheet" href="/css/main.css">
+
+</head>
+
+<body>
+    <%- include('../partials/header') %>
+
+        <article class="blog-post">
+            <header class="post-header">
+                <h2>
+                    <%= article.data.title %>
+                </h2>
+                <div class="post-meta">
+                    <span class="date">
+                    <b> Published:</b> <i><%= new Date(article.data.date).toLocaleDateString('en-US', { year: 'numeric' ,
+                            month: 'long' , day: 'numeric' }) %></i>
+                    </span>
+                    <% if (article.data.lastModified !==article.data.date) { %>
+                        <span class="last-modified">
+                            <b>Last modified:</b> <i><%= new Date(article.data.lastModified).toLocaleDateString('en-US', {
+                                year: 'numeric' , month: 'long' , day: 'numeric' }) %></i>
+                        </span>
+                        <% } %>
+                            <span class="author"><b>By</b> <i><%= article.data.author %></i></span>
+                </div>
+            </header>
+
+            <div class="post-content">
+                <%- article.content %>
+            </div>
+        </article>
+</body>
+
+</html>

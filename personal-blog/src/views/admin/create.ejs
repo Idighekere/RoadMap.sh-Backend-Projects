@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css">
+
+</head>
+
+<body>
+
+    <%- include('../partials/header') %>
+
+<div class="page-container">
+
+    <h2>Create New Article</h2>
+
+        <form action="/admin/articles" method="post">
+
+            <div class="input-container">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" placeholder="Blog Title goes here" required>
+            </div>
+
+            <div class="input-container">
+                <label for="content">Content (Markdown Only)</label>
+                <textarea name="content" id="content" rows="15" placeholder="Blog Contents goes here"></textarea>
+            </div>
+            <button type="submit" class="btn">Publish</button>
+        </form>
+    </div>
+</body>
+
+</html>

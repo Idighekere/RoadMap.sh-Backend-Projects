@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+
+<body>
+
+    <%- include('../partials/header') %>
+        <div class="page-container">
+
+            <h2>Admin Dashboard</h2>
+            <a href="/admin/articles/new" class="btn">Create New Post</a>
+
+            <div class="table-container">
+
+            <table class="admin-table">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Date</th>
+                        <th>Actions</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <% articles.forEach(article=>{ %>
+
+                        <tr>
+                            <td>
+                                <%= article.title %>
+                            </td>
+                            <td>
+                                <%= new Date(article.date).toLocaleDateString() %>
+                            </td>
+                            <td class="table-btn">
+                                <div class="action-buttons">
+
+                                    <a href="/articles/<%= article.slug %>" class="action-btn view-btn"><img src="/view.svg" alt=""><span>View</span></a>
+                                    <a href="/admin/articles/<%= article.slug %>/edit" class="action-btn edit-btn"><img src="/edit.svg" alt=""><span>Edit</span></a>
+                                    <form action="/admin/articles/<%= article.slug %>/delete" class="delete-form" method="POST"
+                                        style="display: inline;">
+                                        <button type="submit"  class="action-btn delete-btn"
+                                        onclick="return confirm('Are you sure?')"><img src="/delete.svg" alt=""><span>Delete</span></button>
+                                    </form>
+                                </div>
+                            </td>
+                        </tr>
+                        <% }) %>
+                </tbody>
+            </table>
+
+            </div>
+        </div>
+</body>
+
+</html>

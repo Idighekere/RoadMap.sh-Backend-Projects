@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update | <%= article.data.title %>
+    </title>
+    <link rel="stylesheet" href="/css/main.css">
+
+
+</head>
+
+
+<body>
+
+    <%- include('../partials/header') %>
+
+        <div class="page-container">
+
+            <h2>Update: <%= article.data.title %>
+            </h2>
+
+            <form action="/admin/articles/<%= article.data.slug %>" method="post">
+
+                <div class="input-container">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title" value="<%= article.data.title  %>" required>
+                </div>
+
+                <div class="input-container">
+
+
+                    <label for="content">Content (Markdown Only)</label>
+                    <textarea name="content" id="content" required  rows="15"> <%=article.rawContent %></textarea>
+                </div>
+                <button type="submit" class="btn">Update</button>
+            </form>
+        </div>
+</body>
+
+</html>

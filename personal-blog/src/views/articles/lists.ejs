@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <%- include('../partials/header') %>
+
+        <% if (articles.length==0) { %>
+            <p style="font-weight: 600;">No articles published yet.</p>
+
+            <% } else { %>
+                <div class="articles-container">
+
+                    <% articles.forEach(article=>{ %>
+
+                        <div class="article">
+                            <h2>
+                                <a href="/articles/<%= article.slug %>">
+                                    <%= article.title %>
+                                </a>
+                            </h2>
+
+                            <p>
+                                <%= new
+                                    Date(article.date).toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'})
+                                    %>
+                                    <%= new Date(article.date).toLocaleTimeString('en-US',{timeStyle:"short"}) %>
+
+                            </p>
+                            <p>
+                                <b>
+
+                                    Author:
+                                </b>
+                                <i>
+                                    <%= article.author %>
+
+                                </i>
+                            </p>
+                        </div>
+                        <% }) %>
+                </div>
+                <% } %>
+
+</body>
+
+</html>
