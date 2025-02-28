@@ -69,7 +69,7 @@ This repository contains my implementations of backend projects from [roadmap.sh
    - Status: Completed
    - Description: A simple personal blog app that uses templating engine ejs to display blogposts. Stores each blog post as a markdown file, utilizes a basic authentication for the admin routes.
    - Technologies: EJS, Express, Markdown
-   - Link: [RoadMap.sh](https://roadmap.sh/projects/persoonal-blog)
+   - Link: [RoadMap.sh](https://roadmap.sh/projects/personal-blog)
    - Code: [personal-blog](https://github.com/Idighekere/RoadMap.sh-Backend-Projects/tree/master/personal-blog)
 
 (More projects will be added as they are implemented)
@@ -88,7 +88,7 @@ This repository contains my implementations of backend projects from [roadmap.sh
 
 1. Clone the repository:
 ```bash
-git clone 
+git clone
 ```
 
 2. Navigate to project directory:
