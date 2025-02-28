@@ -13,7 +13,7 @@ const productionErrors = (res, error) => {
         })
     } else {
         res.status(500).json({
-            status: 'fail',
+            status: 'error',
             message: 'Something went Wrong',
         })
     }

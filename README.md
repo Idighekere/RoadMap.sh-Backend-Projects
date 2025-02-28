@@ -18,8 +18,8 @@ This repository contains my implementations of backend projects from [roadmap.sh
 - **Runtime Environment:** Node.js
 - **Framework:** Express.js
 - **Database:** (To be determined based on project requirements)
-- **Testing:** (To be added as projects progress)
-- **Documentation:** (To be added as projects progress)
+<!-- - **Testing:** (To be added as projects progress) -->
+<!-- - **Documentation:** available in al -->
 
 ## 🚀 Projects
 
@@ -41,36 +41,48 @@ This repository contains my implementations of backend projects from [roadmap.sh
    - Status: Completed
    - Link: [RoadMap.sh](https://roadmap.sh/projects/task-tracker)
    - Code: [task-tracker](https://github.com/Idighekere/RoadMap.sh-Backend-Projects/tree/master/task-tracker)
+
 4. **Expense Tracker**
    - Status: Completed
    - Description: A CLI based expense tracker, that adds, delete, update, lists, show summary(total) and summary by months
    - Technologies: Js
    - Link: [RoadMap.sh](https://roadmap.sh/projects/expense-tracker)
    - Code: [expense-tracker](https://github.com/Idighekere/RoadMap.sh-Backend-Projects/tree/master/expense-tracker)
+
 5. **Blogging Platform API**
    - Status: Completed
    - Description: A basic web API that allows post to be created, deleted, updated and fetched
    - Technologies: Expressjs and MongoDB
    - Link: [RoadMap.sh](https://roadmap.sh/projects/blogging-platform-api)
    - Code: [blogging-platform-api](https://github.com/Idighekere/RoadMap.sh-Backend-Projects/tree/master/blogging-platform-api)
+
 6. **Unit Converter Web App**
    - Status: Completed
    - Description: A basic unit converter that converts from one length, temperature or weight unit to the other, made use of EJS for the templating and frontend
    - Technologies: Expressjs and EJS
    - Link: [RoadMap.sh](https://roadmap.sh/projects/unit-converter)
    - Code: [unit-converter](https://github.com/Idighekere/RoadMap.sh-Backend-Projects/tree/master/unit-converter)
+
 7. **TMDB CLI tool**
    - Status: Completed
    - Description: A command-lineinterface tool that fetches data from the TMDB APi and displays on the terminal based on user's commands ('top','upcoming', 'popular' or 'playing')
    - Technologies: Js
    - Link: [RoadMap.sh](https://roadmap.sh/projects/tmdb-cli)
    - Code: [TMDB-cli-tool](https://github.com/Idighekere/RoadMap.sh-Backend-Projects/tree/master/tmdb-cli-tool)
+
 8. **Personal Blog**
    - Status: Completed
    - Description: A simple personal blog app that uses templating engine ejs to display blogposts. Stores each blog post as a markdown file, utilizes a basic authentication for the admin routes.
    - Technologies: EJS, Express, Markdown
    - Link: [RoadMap.sh](https://roadmap.sh/projects/personal-blog)
    - Code: [personal-blog](https://github.com/Idighekere/RoadMap.sh-Backend-Projects/tree/master/personal-blog)
+
+9. **Weather API**
+   - Status: Completed
+   - Description: A weather API service that fetches and processes weather data from an external weather API. The API returns essential weather details, including temperature, humidity, wind speed, precipitation, and sun/moon information for a given location. ☀⛅✨
+   - Technologies: Express, Redis Cache
+   - Link: [RoadMap.sh](https://roadmap.sh/projects/weather-api-wrapper-service)
+   - Code: [personal-blog](https://github.com/Idighekere/RoadMap.sh-Backend-Projects/tree/master/weather-api)
 
 (More projects will be added as they are implemented)
 
